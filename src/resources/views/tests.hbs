@@ -1,0 +1,133 @@
+<div class="main_content">
+    <div class="start_test_container" id="start_test_container">
+        <h2>General Knowledge Test</h2>
+        <div class="introduction">
+            <p>The knowledge you have gained from studying the Commercial Driver License Manual on topics such as
+                road signs, handling weather, special road conditions, railroad crossings, right-of-way rules, and
+                driving techniques will be tested today to help you become a better driver and to prepare you for
+                the real CDL written exam. Our 50 multiple-choice questions, which are written just like those you
+                will find on the actual test and each contain a hint and explanation to help you understand the
+                subject matter completely, are an ideal way to simulate taking the exam. Instead of making question
+                flash cards, you can test yourself here again and again until you receive a perfect score. Good luck
+                and drive safely!</p>
+        </div>
+        <div class="select-and-text">
+            <p style="line-height: 50px;">Choose your state: </p>
+            <select name="" id="state" class="state">
+            </select>
+        </div>
+        <button class="btn_start_test" id="btn_start_test">Start</button>
+    </div>
+
+
+    <div class="main_test_area" id="main_test_area">
+        <div class="menu_progress">
+            <h5>Your Progress</h5>
+            <div id="atCell"></div>
+            <div class="atProgressInfo">
+                <p>&#10003; <span id="numberOfMistakes"></span> mistakes allowed to pass</p>
+            </div>
+            <!-- <div class="app-btn text_align_center">
+                    <a class="dowload_app" href="https://apps.apple.com/us/app/cdl-permit-practice-test-2022/id1627396953" class="app-btn1">
+                        <img class="img_appstore" src="img/shape/app_btn1.svg" alt="Download on App Store">
+                    </a>
+                </div> -->
+        </div>
+        <div class="question_container" id="question_container">
+            <div class="question">
+                <p class="display_inline fontWeigth">Question </p>
+                <p class="display_inline fontWeigth" id="number_of_question"></p>
+                <p class="display_inline">/</p>
+                <p class="display_inline" id="testLength">50</p>
+                <p id="question"></p>
+            </div>
+            <div class="question_image">
+                <img src="" id="question_image">
+            </div>
+            <div class="answer" id="answer1">
+                <div class="display_flex align-items-center">
+                    <div class="abcd" id="abcd_1">A</div>
+                </div>
+                <div class="answer_wrapper">
+                    <p class="display_inline answer_content" id="answer_content_1"></p>
+                </div>
+            </div>
+            <div class="answer" id="answer2">
+                <div class="display_flex align-items-center">
+                    <div class="abcd" id="abcd_2">B</div>
+                </div>
+                <div class="answer_wrapper">
+                    <p class="display_inline answer_content" id="answer_content_2"></p>
+                </div>
+            </div>
+            <div class="answer" id="answer3">
+                <div class="display_flex align-items-center">
+                    <div class="abcd" id="abcd_3">C</div>
+                </div>
+                <div class="answer_wrapper">
+                    <p class="display_inline answer_content" id="answer_content_3"></p>
+                </div>
+            </div>
+            <div class="answer" id="answer4">
+                <div class="display_flex align-items-center">
+                    <div class="abcd" id="abcd_4">D</div>
+                </div>
+                <div class="answer_wrapper">
+                    <p class="display_inline answer_content" id="answer_content_4"></p>
+                </div>
+            </div>
+            <div class="explanation answer" id="explanation">
+                <div>
+                    <img src="./img/vector.svg" alt="image">
+                </div>
+                <div class="answer_wrapper">
+                    <p class="display_inline answer_content" id="explanation_content"></p>
+                </div>
+            </div>
+
+            <div class="move">
+                <button id="back" onclick="back()">Back</button>
+                <button id="next" onclick="next()">Next</button>
+            </div>
+
+            <div class="saleUnder">
+                <a class="dowload_app" href="https://apps.apple.com/us/app/cdl-permit-practice-test-2022/id1627396953"
+                    class="app-btn1">
+
+                    <img src="img/gallery/Frame_351.jpg" alt="download app">
+                </a>
+            </div>
+        </div>
+        <div class="saleLeft">
+            <a class="dowload_app" href="https://apps.apple.com/us/app/cdl-permit-practice-test-2022/id1627396953"
+                class="app-btn1">
+                <img src="img/gallery/Frame_353.png" alt="dowload app">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- summary -->
+    <div class="summary" id="summary">
+        <div class="score" id="circle_score">
+            <img src="img/shape/ic_star.png" alt="image" width="120" height="120">
+            <p class="display_inline show_score" id="score">10/50</p>
+        </div>
+        <div class="summary_text">
+            <p id="congra"></p>
+            <p id="congra_content"></p>
+        </div>
+        <p>Download now:</p>
+        <div class="app-btn">
+            <a class="dowload_app" href="https://apps.apple.com/us/app/cdl-permit-practice-test-2022/id1627396953"
+                class="app-btn1">
+                <img class="img_appstore" src="img/shape/app_btn1.svg" alt="Download on App Store"></a>
+        </div>
+    </div>
+</div>
+
+<script src="js/tests.js"></script>
+
+<script>
+    document.getElementById('navigation_tests').classList.add("active");
+</script>
