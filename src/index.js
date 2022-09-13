@@ -50,5 +50,8 @@ app.get('/Steps-Required-to-Get-a-CDL-License-in-2022', (req, res) => {
 app.get("/what-is-a-commercial-driver's-license", (req, res) => {
     res.render("what-is-a-commercial-driver's-license")
 })
+app.get('*', function(req, res){
+    res.send('404 not found', 404);
+})
 
 app.listen(port, () => console.log(`listening at http://localhost:${port}`))
