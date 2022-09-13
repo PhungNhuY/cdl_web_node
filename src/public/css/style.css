@@ -7307,7 +7307,7 @@ z .slider-area .hero-cap h2 {
     }
     .app_name{
         /* display: none; */
-        font-size: 25px; 
+        font-size: 20px; 
     }
     .menu_progress{
         margin-left: 50px;
@@ -7364,6 +7364,10 @@ z .slider-area .hero-cap h2 {
     .justifyContentSmallDevice{
         align-items: unset;
         text-align: unset;
+    }
+    .app_name{
+        /* display: none; */
+        font-size: 25px; 
     }
 }
 
