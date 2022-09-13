@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900|Poppins:300,400,500,600,700,800,900&display=swap");
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --main-color: #22A551;
 }
@@ -6931,6 +6935,7 @@ z .slider-area .hero-cap h2 {
     background-color: #22a551;
     border-radius: 20px;
     cursor: pointer;
+    line-height: 40px !important;
 }
 
 .summary{
