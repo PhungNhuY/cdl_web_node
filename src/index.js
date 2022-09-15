@@ -19,39 +19,14 @@ app.engine('hbs', handlebars.engine({
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'resources/views'))
 
+//middleware
+app.use(express.urlencoded({
+    extended: true
+}));
+app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.render('index')
-})
-app.get('/blog', (req, res) => {
-    res.render('blog')
-})
-app.get('/tests', (req, res) => {
-    res.render('tests')
-})
-app.get('/contact', (req, res) => {
-    res.render('contact')
-})
-app.get('/challenge', (req, res) => {
-    res.render('challenge')
-})
-app.get('/CDL-Endorsements-and-Restrictions', (req, res) => {
-    res.render('CDL-Endorsements-and-Restrictions')
-})
-app.get('/CDL-Federal-Requirements', (req, res) => {
-    res.render('CDL-Federal-Requirements')
-})
-app.get('/How-long-does-it-take-to-get-a-CDL-in-2022', (req, res) => {
-    res.render('How-long-does-it-take-to-get-a-CDL-in-2022')
-})
-app.get('/Steps-Required-to-Get-a-CDL-License-in-2022', (req, res) => {
-    res.render('Steps-Required-to-Get-a-CDL-License-in-2022')
-})
-app.get("/what-is-a-commercial-driver's-license", (req, res) => {
-    res.render("what-is-a-commercial-driver's-license")
-})
-app.get('*', function(req, res){
-    res.send('404 not found', 404);
-})
+//router
+const route = require('./routes');
+route(app);
 
 app.listen(port, () => console.log(`listening at http://localhost:${port}`))
