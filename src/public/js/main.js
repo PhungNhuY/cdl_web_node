@@ -92,7 +92,7 @@
     dots: true,
     infinite: true,
     speed: 300,
-    arrows: true,
+    arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev"> <span class="flaticon-arrow"></span></button>',
@@ -137,7 +137,7 @@
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
