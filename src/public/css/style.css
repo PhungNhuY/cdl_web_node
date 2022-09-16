@@ -6922,6 +6922,7 @@ z .slider-area .hero-cap h2 {
     /* background-color: white; */
     height: 40px;
     width: 50vw;
+    margin-top: 10px;
     /* position: fixed; */
     /* bottom: 3%; */
     display: flex;
@@ -7213,7 +7214,7 @@ z .slider-area .hero-cap h2 {
         width: 40%;
     }
     .app_name{
-        /* display: none; */
+        display: none;
         font-size: 15px; 
     }
     .menu_progress{
@@ -7265,7 +7266,7 @@ z .slider-area .hero-cap h2 {
         width: 60%;
     }
     .app_name{
-        /* display: none; */
+        display: none;
         font-size: 15px; 
     }
     .menu_progress{
@@ -7311,7 +7312,7 @@ z .slider-area .hero-cap h2 {
         width: 60%;
     }
     .app_name{
-        /* display: none; */
+        display: inline-block;
         font-size: 20px; 
     }
     .menu_progress{
@@ -7360,6 +7361,10 @@ z .slider-area .hero-cap h2 {
         align-items: center;
         text-align: center;
     }
+    .app_name{
+        display: inline-block;
+        font-size: 20px; 
+    }
 }
 
 @media only screen and (min-width: 992px){
@@ -7371,7 +7376,7 @@ z .slider-area .hero-cap h2 {
         text-align: unset;
     }
     .app_name{
-        /* display: none; */
+        display: inline-block;
         font-size: 25px; 
     }
 }

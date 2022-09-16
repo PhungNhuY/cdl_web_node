@@ -117,19 +117,19 @@ function gen_ans(id){
     document.getElementById(`cell_${id}`).style.border = "2px solid blue";
 
     //set onclick for cell
-    document.getElementById(`cell_${id}`).setAttribute('onclick', `gen_ans(${id})`);
+    // document.getElementById(`cell_${id}`).setAttribute('onclick', `gen_ans(${id})`);
 
     //Show results if the question has been answered
     if(data[id].userChoose != null && data[id].userChoose != ''){
         choose(data[id].userChoose, id);
     }
 
-    //hide next button if question has not been answered
-    if(data[id].userChoose == undefined){
-        document.getElementById("next").style.display = "none";
-    }else{
+    // //hide next button if question has not been answered
+    // if(data[id].userChoose == undefined){
+    //     document.getElementById("next").style.display = "none";
+    // }else{
 
-    }
+    // }
 }
 
 
@@ -295,6 +295,7 @@ function startTest(){
             cell.innerText = cellId;
             cell.setAttribute('class', 'thisCell');
             cell.setAttribute('id', `cell_${cellId-1}`);
+            cell.setAttribute('onclick', `gen_ans(${i})`);
             menuProgress.appendChild(cell);
         }
         
